@@ -19,7 +19,6 @@
 - [✨ Overview](#-overview)
 - [📖 Description](#-description)
 - [🚀 Features](#-features)
-- [   ](#---)
 - [🗂️ Project Skeleton](#️-project-skeleton)
 - [🛠️ Built With](#️-built-with)
 - [⚡ How To Use](#-how-to-use)
@@ -64,8 +63,8 @@ This project demonstrates:
 - 🎨 Button dynamically changes color & text when toggling Add Task form
 
 <div align="center"> <img src="./screenshots/add-task.png" alt="add task" width="500"/> <img src="./screenshots/task-list.png" alt="task list" width="500"/> </div>
----
 
+---
 
 ## 🗂️ Project Skeleton
 
