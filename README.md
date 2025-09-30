@@ -1,14 +1,14 @@
 
-<h1 align="center">Task Tracker</h1>
+<h1 align="center">📌 Task Tracker</h1>
 
 <div align="center">
   <h3>
-    <a href="https://umit8098.github.io/React-Project-Tutorial-FullStack/">
-      Demo
+    <a href="https://umit8098.github.io/React-Project-Task-Tracker-Single-Page/">
+      🖥️ Demo
     </a>
      | 
-    <a href="https://umit8098.github.io/React-Project-Tutorial-FullStack/">
-      Project
+    <a href="https://github.com/Umit8098/React-Project-Task-Tracker-Single-Page.git">
+      📂 Project
     </a>
   </h3>
 </div>
@@ -16,82 +16,75 @@
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [Overview](#overview)
-- [Description](#description)
-- [Features](#features)
-- [API](#api)
-- [Project Skeleton](#project-skeleton)
-- [Built With](#built-with)
-- [How To Use](#how-to-use)
-- [About This Project](#about-this-project)
-- [Acknowledgements](#acknowledgements)
-- [Contact](#contact)
+- [✨ Overview](#-overview)
+- [📖 Description](#-description)
+- [🚀 Features](#-features)
+- [   ](#---)
+- [🗂️ Project Skeleton](#️-project-skeleton)
+- [🛠️ Built With](#️-built-with)
+- [⚡ How To Use](#-how-to-use)
+- [📌 About This Project](#-about-this-project)
+- [🙏 Acknowledgements](#-acknowledgements)
+- [📬 Contact](#-contact)
 
 ---
 
-## Overview
+## ✨ Overview
 
-A simple CRUD (Create, Read, Update, Delete) application built with **React** and **Axios**.
-Users can add, edit, delete and list tutorials.
+A simple Task Tracker App built with React.
+Users can add, delete, and mark tasks as done. All data is persisted in localStorage, so tasks remain after page reloads.
 
-Built with **React (Frontend)** + **Django REST Framework (Backend API on PythonAnywhere)**.
+A simple Task Tracker App built with React.
+Users can add, delete, and toggle tasks. Tasks are saved to localStorage so they remain after refresh.
 
-![tutorial gif](tutorial.gif)
-
----
-
-## Description
-
-This project is a basic CRUD application where users can manage tutorials.  
-It demonstrates how to integrate React with a REST API using `axios` for data fetching and modification.  
-The backend is hosted on [PythonAnywhere](https://www.pythonanywhere.com/).  
+<div align="center"> <img src="./task-tracker.gif" alt="task tracker demo" width="700"/> </div>
 
 ---
 
-## Features
-- 📌 List all tutorials from API  
-- ➕ Add a new tutorial  
-- ✏️ Edit an existing tutorial (update task and description)  
-- ❌ Delete a tutorial  
-- 🔄 Real-time refresh after each operation (without page reload)  
-- 🖼️ Modal-based edit form  
-  
----
+## 📖 Description
 
-## API
+This project demonstrates:
 
-The project communicates with a REST API hosted on **PythonAnywhere**.
-**Base URL:**
+* ⚛️ Using React functional components and hooks (`useState`, `useEffect`)
 
-```bash
-https://umit8101.pythonanywhere.com/todo/
-```
+* 💾 LocalStorage persistence for tasks
 
-**Endpoints:**
+* 🎨 Dynamic styling & conditional rendering
 
-* `GET /todo/` → Fetch all tutorials
-* `POST /todo/` → Create a new tutorial
-* `PUT /todo/:id/` → Update a tutorial
-* `DELETE /todo/:id/` → Delete a tutorial
+* ➕ Adding, ❌ deleting, ✅ marking tasks as done
 
 ---
 
-## Project Skeleton
+## 🚀 Features
+
+- ➕ Add a new task with date & time
+- ❌ Delete a task
+- ✅ Double-click to toggle “done” state
+- 💾 LocalStorage persistence (tasks remain after refresh)
+- 🎨 Button dynamically changes color & text when toggling Add Task form
+
+<div align="center"> <img src="./screenshots/add-task.png" alt="add task" width="500"/> <img src="./screenshots/task-list.png" alt="task list" width="500"/> </div>
+---
+
+
+## 🗂️ Project Skeleton
 
 ```
 Full Stack - Tutorial App
 |
 |----readme.md   
-SOLUTION
 ├── public
 │     └── index.html
 │  
 ├── src
 │    ├── components
-│    │       ├── AddTutorial.jsx
-│    │       ├── EditTutorial.jsx
-│    │       └── TutorialList.jsx 
+│    │       ├── Header.jsx
+│    │       ├── AddTaskForm.jsx
+│    │       └── ShowTasks.jsx 
 │    │            
+│    ├── helper
+│    │       └── starterData.js
+│    │
 │    ├── pages
 │    │       └── Home.jsx
 │    │
@@ -99,24 +92,24 @@ SOLUTION
 │    ├── App.scss
 │    ├── index.js
 │    └── index.css
+│
 ├── package.json
 └── yarn.lock
 ```
 
 ---
 
-## Built With
+## 🛠️ Built With
 
 * [React](https://react.dev/)
-* [Axios](https://axios-http.com/)
-* [Bootstrap 5](https://getbootstrap.com/)
 * [React Icons](https://react-icons.github.io/react-icons/)
-* [Django REST Framework (API)](https://www.django-rest-framework.org/)
+* [LocalStorage API](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+* [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 
 ---
 
-## How To Use
+## ⚡ How To Use
 
 To clone and run this application, you'll need [Git](https://git-scm.com/), [Node.js](https://nodejs.org/), and a package manager (`yarn` or `npm`) installed on your computer.
 
@@ -138,22 +131,21 @@ $ npm start
 
 ---
 
-## About This Project
+## 📌 About This Project
 
-* Built for educational purposes.
-* Demonstrates CRUD operations in React and REST API integration.
-* Showcases state management and form handling using React hooks.
+- Built for educational purposes.
+- Demonstrates state management and local persistence in React.
+- Showcases conditional rendering and form handling.
 
 ---
 
-## Acknowledgements
+## 🙏 Acknowledgements
 - [Clarusway](https://clarusway.com/)
 - [React Icons](https://react-icons.github.io/react-icons/)
-- [Bootstrap](https://getbootstrap.com/)
 
 ---
 
-## Contact
+## 📬 Contact
 
 <!-- - Website [your-website.com](https://{your-web-site-link}) -->
 - GitHub [@Umit8098](https://github.com/Umit8098)
